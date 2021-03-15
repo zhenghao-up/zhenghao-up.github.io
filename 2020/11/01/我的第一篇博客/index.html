@@ -1,34 +1,22 @@
-extends partial/layout
+{% extends '_layout.swig' %}
 
-block site_title
-  != page.title + " | " + config.title
+{% block pageCss %}
+    {{ css('scss/views/page/post') }}
+{% endblock %}
 
-block description
-  - var desc = page.desc || page.title + ' - ' + config.author;
-  meta(name="description", content=desc)
+{% block header %}
+    {% include './_partial/common/small-header.swig' %}
+{% endblock %}
 
-block header
-  header.site-header
-    .site-nav
-      span.button-toggle
-      include partial/nav
-      form#search-form.nav-item
-        input(type="text" id="local-search-input" name="q" results="0" placeholder=__('search') class="search form-control" autocomplete="off" autocorrect="off")
-        span.fa.fa-times(onclick="resetSearch()") 
-      div#local-search-result
-      p.no-result No results found
+{% block main %}
+    {% include './_partial/post/main.swig' %}
+{% endblock %}
 
-block content
-  include mixins/post
-  +post(page)
+{% block pagejs %}
+    {{ js('js/page/post.js') }}
+{% endblock %}
 
-block sidebar
-  include partial/sidebar
-
-block pagination
-  include mixins/paginator
-  +post()
-  include partial/comment
-
-block copyright
-  include partial/footer
+{% block other %}
+    {% include './_partial/common/comment.swig' %}
+    {% include './_partial/post/post-statistical.swig' %}
+{% endblock %}

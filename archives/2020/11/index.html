@@ -1,29 +1,13 @@
-extends partial/layout
+{% extends '_layout.swig' %}
 
-block site_title
-  != __('archive') + " | " + config.title
+{% block pageCss %}
+    {{ css('scss/views/page/archive') }}
+{% endblock %}
 
-block header
-  header.site-header
-    .site-nav
-      span.button-toggle
-      include partial/nav
-      form#search-form.nav-item
-        input(type="text" id="local-search-input" name="q" results="0" placeholder=__('search') class="search form-control" autocomplete="off" autocorrect="off")
-        span.fa.fa-times(onclick="resetSearch()") 
-      div#local-search-result
-      p.no-result No results found
+{% block header %}
+    {% include './_partial/common/small-header.swig' %}
+{% endblock %}
 
-block content
-  include mixins/post
-  +postList()
-
-block sidebar
-  include partial/sidebar
-
-block pagination
-  include mixins/paginator
-  +home()
-
-block copyright
-  include partial/footer
+{% block main %}
+    {% include './_partial/archive/main.swig' %}
+{% endblock %}
