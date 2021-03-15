@@ -1,31 +1,445 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary"><title>Archive | Hexo</title><link ref="canonical" href="http://example.com/archives/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
-var CONFIG = {
-  root: '/',
-  algolia: undefined,
-  assistSearch: undefined,
-  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
-  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
-  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
-  postWidget: {"endText":true},
-  nightMode: {"enable":true},
-  back2top: {"enable":true},
-  codeblock: {"style":"default","highlight":"light","wordWrap":false},
-  reward: false,
-  fancybox: false,
-  zoomImage: {"gapAside":"20px"},
-  galleryWaterfall: undefined,
-  lazyload: false,
-  pjax: undefined,
-  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
-  shortcuts: undefined,
-  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
-  sourcePath: {"js":"js","css":"css","images":"images"},
-};
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.2.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hexo</div><div class="header-banner-info__subtitle"></div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><div class="archive"><div class="archive-total">Total 1 Articles, Go on!</div><section class="timeline"><time class="timeline-item timeline-item--year">2020</time><article class="timeline-item"><time class="timeline-item__time">11-01</time><h2 class="timeline-item__title"><a class="timeline-item__link" href="/2020/11/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">我的第一篇博客</a></h2></article></section></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">hello world</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">1</div><div class="sidebar-ov-state-item__name">Archives</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>John Doe</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v5.2.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      Archive | Hexo
+    
+  </title>
+  <meta name="author" content="John Doe">
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: 'https://raw.githubusercontent.com/miccall/hexo-theme-Mic_Theme/master/source/img/bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.2.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">Fetching...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">Catalog</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			Archive
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">Home</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">Archive</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">Category</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">Tag</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">About</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">Gallery</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-08
+	描述：The archive module refers to 'https://1984n.win/archives-post/' & 'http://1900.live/one-theme/', include js、css. Relevant rights reserved by them! 
+-->
+<div class="layout-archive">
+    <div class="i-container">
+        <i class="fa fa-book i-tag">
+			<!--
+	Thec counter of post number  for archive.ejs.  
+-->
+
+	
+	Total 1 post
+	
+
+		</i>
+    </div>
+
+    <!-- Archive by year, display in page( archive ) -->
+    <div id="layout-archive-year" style="display: 
+                 	
+            block">        
+        
+        
+        <ul>
+            
+                <li>
+                    <a href="/2020/11/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+            			<em year="2020">
+                            11-01
+                        </em>
+        			    <span itemprop="name">
+                            我的第一篇博客
+                        </span>
+        			    
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+
+     <!-- Archive by month, called by page( categories, tags... ) -->
+    <div id="layout-archive-month" style="display: 
+         
+            none"> 
+        
+
+        
+        
+            
+
+            
+                
+                <h3 class="archive-year">
+                    <!-- <a href="/archives/2020/11"> -->
+                    <a>
+                        2020 - 11
+                    </a>
+                </h3>
+            
+
+            <ul>
+                <li>
+                    <a href="/2020/11/01/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+                        <em>
+                            11-01
+                        </em>
+                        <span itemprop="name">
+                            我的第一篇博客
+                        </span>
+                               
+                    </a>
+                </li>
+            </ul>
+        
+    </div>
+
+    
+</div>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/" class="menu-item-home" target="_blank">Home</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/archives" class="menu-item-archive" target="_blank">Archive</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/categories" class="menu-item-categories" target="_blank">Category</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/tags" class="menu-item-tags" target="_blank">Tag</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/about" class="menu-item-about" target="_blank">About</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/gallery" class="menu-item-gallery" target="_blank">Gallery</a>
+		</li>
+		
+	
+
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+
+
+<script src="/plugin/chinese/chinese.js"></script>
+<script src="/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/plugin/resizediv/resizediv.js"></script>
+<script src="/js/main.js"></script>
+
+	</body>	
+</html>
