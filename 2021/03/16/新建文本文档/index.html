@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Mr.Hao" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/sky.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.2.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Mr.Hao</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="关于">
+		                关于
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="搜索">
+		                搜索
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="友情链接">
+		                友情链接
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/zhenghao-up" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 搞懂JS 原型：prototype、__proto__、原型链</span><br><span class="line">date: 2020-11-1 21:45:03</span><br><span class="line">tags:</span><br><span class="line">thumbnail: ..&#x2F;img&#x2F;sun.jpg</span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="1-初识"><a href="#1-初识" class="headerlink" title="1.初识"></a>1.初识</h1><h2 id="1-1内存图"><a href="#1-1内存图" class="headerlink" title="1.1内存图"></a>1.1内存图</h2><p>通过下图，我们先有一个大概的认识~</p>
+<p>使用对象模板（构造方法）Student创建对象的实例tom，这个就像妈妈生育了孩子<br>任何函数在创建的时候，会同时创建该函数的prototype属性，该属性引用的就是原型对象。原型对象就像爸爸，爸爸为孩子提供了公共属性和方法。如果创建了多个实例，各个实例内部有自己的自有属性，但这些实例都可以使用原型对象中的公共属性，就好比：亲兄弟俩各有自己的个性，也有继承自爸爸的共性<br>实例继承原型对象是通过_ _ proto_ _属性。这就像是孩子体内的基因，这个基因说明它就是其原型对象的孩子</p>
+<p><img src="https://img-blog.csdnimg.cn/20210314142356874.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQxMDc4Mw==,size_16,color_FFFFFF,t_70#pic_center"></p>
+<h2 id="1-2-代码"><a href="#1-2-代码" class="headerlink" title="1.2 代码"></a>1.2 代码</h2><p>上图代码~</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">function Student(name,age)&#123;    &#x2F;&#x2F;构造函数</span><br><span class="line">  this.name&#x3D;name;</span><br><span class="line">  this.age&#x3D;age;</span><br><span class="line">&#125;</span><br><span class="line">Student.prototype.say&#x3D;function()&#123;    &#x2F;&#x2F;设置公共属性</span><br><span class="line">  console.log(&quot;hello&quot;);</span><br><span class="line">&#125;</span><br><span class="line">var tom &#x3D; new Student(&quot;tom&quot;,19);	&#x2F;&#x2F;创建实例</span><br><span class="line">var mary &#x3D; new Student(&quot;mary&quot;,19);</span><br><span class="line">tom.say();</span><br><span class="line">mary.say();</span><br><span class="line">console.log(tom);</span><br><span class="line">console.log(mary);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="2-相知"><a href="#2-相知" class="headerlink" title="2.相知"></a>2.相知</h1><h2 id="2-1自有属性和原型属性"><a href="#2-1自有属性和原型属性" class="headerlink" title="2.1自有属性和原型属性"></a>2.1自有属性和原型属性</h2><p>接上面栗子~</p>
+<p>自有属性就好比tom有一块卡西欧手表，mary有一条粉色的裙子</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">tom.watch&#x3D;&quot;CASIO&quot;;</span><br><span class="line">mary.skirt&#x3D;&quot;pink&quot;;</span><br><span class="line">console.log(tom.watch);		&#x2F;&#x2F;CASIO</span><br><span class="line">console.log(mary.skirt);	&#x2F;&#x2F;pink</span><br></pre></td></tr></table></figure>
+
+
+<p>原型属性就好比tom和mary是双胞胎，他们两生日一样</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Student.prototype.birthday&#x3D;&quot;2000&#x2F;1&#x2F;1&quot;;</span><br><span class="line">console.log(tom.birthday)	&#x2F;&#x2F;2000&#x2F;1&#x2F;1</span><br><span class="line">console.log(mary.birthday)	&#x2F;&#x2F;2000&#x2F;1&#x2F;1</span><br></pre></td></tr></table></figure>
+
+
+<p>自有属性会重写原型属性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function Hero()&#123;</span><br><span class="line">  this.name&#x3D;&quot;Spider man&quot;</span><br><span class="line">&#125;</span><br><span class="line">Hero.prototype.name&#x3D;&quot;Iron Man&quot;;</span><br><span class="line">var hero&#x3D; new Hero();</span><br><span class="line">console.log(hero.name);   &#x2F;&#x2F;Super man</span><br><span class="line"></span><br><span class="line">delete hero.name;</span><br><span class="line">console.log(hero.name);   &#x2F;&#x2F;Iron man</span><br><span class="line"></span><br><span class="line">delete Hero.prototype.name;</span><br><span class="line">console.log(hero.name);   &#x2F;&#x2F;undefined</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-2-原型链"><a href="#2-2-原型链" class="headerlink" title="2.2 原型链"></a>2.2 原型链</h2><p>我们还是看图来理解<br>图中红色的链路就是所谓的原型链~</p>
+<p><img src="https://img-blog.csdnimg.cn/20210314152815807.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQxMDc4Mw==,size_16,color_FFFFFF,t_70#pic_center"></p>
+<p>原型对象本身也有原型<br>构造函数的原型对象中也有一个_ _ proto _ <em>属性，默认指向Object类型的原型对象——Object.prototype<br>Object.prototype是所有对象的原型，它包含了所有对象的公共属性和方法，比如toString方法<br>所有对象通过</em> _ proto _ <em>属性的引用关系，可以直接或间接引用到Object.prototype对象<br>使用对象的</em> _ proto _ _属性形成的逐级引用的关系即为原型链</p>
+<h1 id="3-三角恋"><a href="#3-三角恋" class="headerlink" title="3.三角恋"></a>3.三角恋</h1><p>prototype、_ _ proto _ _和constructor的三角关系</p>
+<p><img src="https://img-blog.csdnimg.cn/20210314155641533.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDQxMDc4Mw==,size_16,color_FFFFFF,t_70#pic_center"></p>
+<p>通过上图可以总结得出：</p>
+<p>tom._ _ proto _ <em>=== Student.prototype<br>tom自身不具有constructor属性，Student.prototype具有constructor属性并且指向了Student函数，所以tom通过</em> _ proto _ _找到原型链中的constructor属性，即tom.constructor===Student</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">console.log(tom.__proto__&#x3D;&#x3D;&#x3D;Student.prototype)			&#x2F;&#x2F;true</span><br><span class="line">console.log(tom.constructor&#x3D;&#x3D;&#x3D;Student)			&#x2F;&#x2F;true</span><br><span class="line">console.log(Student.prototype.constructor&#x3D;&#x3D;&#x3D;Student)	&#x2F;&#x2F;true</span><br></pre></td></tr></table></figure>
+
+
+<p>————————————————<br>版权声明：本文为CSDN博主「Ivymemphis」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_44410783/article/details/114786706">https://blog.csdn.net/weixin_44410783/article/details/114786706</a></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2021/03/16/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2021/03/16/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
