@@ -1,0 +1,337 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Mr.Hao" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/sky.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.2.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Mr.Hao</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="关于">
+		                关于
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="搜索">
+		                搜索
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="友情链接">
+		                友情链接
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/zhenghao-up" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url();background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 ></h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h1 id="单线程的优势和弊端"><a href="#单线程的优势和弊端" class="headerlink" title="单线程的优势和弊端"></a>单线程的优势和弊端</h1><p>js是单线程的，在浏览器中js的执行栈跟渲染线程是相互阻塞的。<br>单线程模式最大的优势就是<strong>更安全</strong>，<strong>更简单</strong><br>缺点也很明确，就是如果中间有一个特别耗时的任务，其他的任务就要等待很长的时间，出现假死的情况。<br>为了解决这种问题，js有两种任务的执行模式：<strong>同步模式（Synchronous）和异步模式（Asynchronous）</strong>。</p>
+<h1 id="同步模式与异步模式"><a href="#同步模式与异步模式" class="headerlink" title="同步模式与异步模式"></a>同步模式与异步模式</h1><h2 id="同步模式-Synchronous"><a href="#同步模式-Synchronous" class="headerlink" title="同步模式 Synchronous"></a>同步模式 Synchronous</h2><p>指的是代码的任务依次执行，后一个任务必须等待前一个任务结束才能开始执行。<br>程序的执行顺序和代码的编写顺序是完全一致的。<br>在单线程模式下，大多数任务都会以同步模式执行。<br>缺点：因为是类似于排队的按次序执行，如果一旦某一个操作执行特别耗时，就会让页面卡顿，卡死，所以需要异步模式。</p>
+<h2 id="异步模式-Asynchronous"><a href="#异步模式-Asynchronous" class="headerlink" title="异步模式 Asynchronous"></a>异步模式 Asynchronous</h2><p>异步模式 不会去等待这个任务的结束才开始下一个任务，都是开启过后就立即往后执行下一个任务。<strong>耗时函数的后续逻辑会通过回调函数的方式定义</strong>。任务完成后，就会调用回调函数。<br>异步模式对于单线程的JavaScript 非常重要，如果没有这种模式，单线程的JavaScript 就无法同时处理大量的耗时任务。<br>而单线程下异步模式的最大难点在于代码执行的顺序混乱。</p>
+<p>异步代码的执行方式简单来说：</p>
+<p>js线程某个时刻发起了一个异步调用，它紧接着继续执行其他的任务，<br>此时异步线程会单独执行异步任务，执行过后会将回调放到消息队列中，<br>js主线程执行完任务过后会依次执行消息队列中的任务。<br><strong>这里要强调，js是单线程的，浏览器不是单线程的，有一些API是有单独的线程去做的</strong>。</p>
+<h1 id="回调函数"><a href="#回调函数" class="headerlink" title="回调函数"></a>回调函数</h1><p><strong>回调函数</strong>：由调用者定义，交给执行者执行的函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; callback就是回调函数</span><br><span class="line">&#x2F;&#x2F; 就是把函数作为参数传递，缺点是不利于阅读，执行顺序混乱。</span><br><span class="line">function foo(callback) &#123;</span><br><span class="line">    setTimeout(function()&#123;</span><br><span class="line">        callback()</span><br><span class="line">    &#125;, 3000)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">foo(function() &#123;</span><br><span class="line">    console.log(&#39;这就是一个回调函数&#39;)</span><br><span class="line">    console.log(&#39;调用者定义这个函数，执行者执行这个函数&#39;)</span><br><span class="line">    console.log(&#39;其实就是调用者告诉执行者异步任务结束后应该做什么&#39;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Promise-异步方案"><a href="#Promise-异步方案" class="headerlink" title="Promise 异步方案"></a>Promise 异步方案</h1><h2 id="Promise概述"><a href="#Promise概述" class="headerlink" title="Promise概述"></a>Promise概述</h2><p>回调的多重嵌套，会导致代码可读低、编写费劲、容易出错，故而被称为 <strong>callback hell</strong>。<br>为了避免这个问题。CommonJS社区提出了Promise的规范，ES6中称为语言规范。</p>
+<p>Promise是一个对象，用来表述一个异步任务执行之后是成功还是失败，它有多个状态：</p>
+<p><strong>Pending</strong> 待定状态, 表示还不清楚异步执行的结果 是成功还是失败。</p>
+<p><strong>Fulfilled</strong> 完成状态, 表示操作已经完成</p>
+<p><strong>Rejected</strong> 操作失败</p>
+<p><img src="https://img-blog.csdnimg.cn/20210315161502115.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ZhbmZhbnl1eXU=,size_16,color_FFFFFF,t_70#pic_center"></p>
+<h2 id="Promise基本用法"><a href="#Promise基本用法" class="headerlink" title="Promise基本用法"></a>Promise基本用法</h2><p>返回resolve</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; &#123;</span><br><span class="line">  resolve(100)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">promise.then((value) &#x3D;&gt; &#123;</span><br><span class="line">  console.log(&#39;resolved&#39;, value) &#x2F;&#x2F; resolve 100</span><br><span class="line">&#125;,(error) &#x3D;&gt; &#123;</span><br><span class="line">  console.log(&#39;rejected&#39;, error)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>返回reject</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const promise &#x3D; new Promise((resolve, reject) &#x3D;&gt; &#123;</span><br><span class="line">  reject(new Error(&#39;promise rejected&#39;))</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">promise.then((value) &#x3D;&gt; &#123;</span><br><span class="line">  console.log(&#39;resolved&#39;, value)</span><br><span class="line">&#125;,(error) &#x3D;&gt; &#123;</span><br><span class="line">  console.log(&#39;rejected&#39;, error)</span><br><span class="line">  &#x2F;&#x2F; rejected Error: promise rejected</span><br><span class="line">  &#x2F;&#x2F;  at E:\professer\lagou\Promise\promise-example.js:4:10</span><br><span class="line">  &#x2F;&#x2F;  at new Promise (&lt;anonymous&gt;)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<p>即便promise中没有任何的异步操作，then方法的回调函数仍然会进入到事件队列中排队。</p>
+<h2 id="Promise-的链式调用"><a href="#Promise-的链式调用" class="headerlink" title="Promise 的链式调用"></a>Promise 的链式调用</h2><ul>
+<li><p>promise对象then方法，返回了全新的promise对象。可以再继续调用then方法，如果return的不是promise对象，而是一个值，那么这个值会作为resolve的值传递，如果没有值，默认是undefined</p>
+</li>
+<li><p>后面的then方法就是在为上一个then返回的Promise注册回调</p>
+</li>
+<li><p>前面then方法中回调函数的返回值会作为后面then方法回调的参数</p>
+</li>
+<li><p>如果回调中返回的是Promise，那后面then方法的回调会等待它的结束</p>
+<h2 id="Promise异常处理"><a href="#Promise异常处理" class="headerlink" title="Promise异常处理"></a>Promise异常处理</h2><h3 id="then中回调的onRejected方法"><a href="#then中回调的onRejected方法" class="headerlink" title="then中回调的onRejected方法"></a>then中回调的onRejected方法</h3><p>也就是then中的第二个回调函数</p>
+</li>
+</ul>
+<h3 id="catch-（推荐）"><a href="#catch-（推荐）" class="headerlink" title=".catch()（推荐）"></a><strong>.catch()（推荐）</strong></h3><p>如果then中没有传入第二个回调 那么异常会进入catch的回调处理</p>
+<p>promise中如果有异常，都会调用reject方法，还可以使用.catch()</p>
+<p>使用.catch方法更为常见，因为更加符合链式调用</p>
+<h3 id="全局对象上的unhandledrejection事件"><a href="#全局对象上的unhandledrejection事件" class="headerlink" title="全局对象上的unhandledrejection事件"></a>全局对象上的unhandledrejection事件</h3><p>还可以在全局对象上注册一个unhandledrejection事件，处理那些代码中没有被手动捕获的promise异常，当然并不推荐使用</p>
+<h2 id="两个静态方法"><a href="#两个静态方法" class="headerlink" title="两个静态方法"></a>两个静态方法</h2><h3 id="Promise-resolve"><a href="#Promise-resolve" class="headerlink" title="Promise.resolve"></a>Promise.resolve</h3><p>不带参数 返回一个Fulfilled状态的Promise对象 后面.then执行 then中的第一个回调<br>参数为简单数据类型 返回一个Fulfilled状态的Promise对象 后面.then执行 then中的第一个回调，并且把该参数作为实参传入给回调<br>如果传入的是一个 Promise 对象，Promise.resolve 方法原样返回<br>如果传入的是带有一个跟 Promise 一样的 then 方法的对象，Promise.resolve 会将这个对象作为 Promise 执行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">Promise.resolve(&#39;foo&#39;)</span><br><span class="line">  .then(function (value) &#123;</span><br><span class="line">    console.log(value)</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">new Promise(function (resolve, reject) &#123;</span><br><span class="line">  resolve(&#39;foo&#39;)</span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 如果传入的是一个 Promise 对象，Promise.resolve 方法原样返回</span><br><span class="line"></span><br><span class="line">var promise &#x3D; ajax(&#39;&#x2F;api&#x2F;users.json&#39;)</span><br><span class="line">var promise2 &#x3D; Promise.resolve(promise)</span><br><span class="line">console.log(promise &#x3D;&#x3D;&#x3D; promise2)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 如果传入的是带有一个跟 Promise 一样的 then 方法的对象，</span><br><span class="line">&#x2F;&#x2F; Promise.resolve 会将这个对象作为 Promise 执行</span><br><span class="line"></span><br><span class="line">Promise.resolve(&#123;</span><br><span class="line">  then: function (onFulfilled, onRejected) &#123;</span><br><span class="line">    onFulfilled(&#39;foo&#39;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br><span class="line">.then(function (value) &#123;</span><br><span class="line">  console.log(value)</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
+
+<h3 id="Promise-reject"><a href="#Promise-reject" class="headerlink" title="Promise.reject"></a>Promise.reject</h3><p>Promise.reject()方法返回一个带有拒绝原因的Promise对象</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; Promise.reject 传入任何值，都会作为这个 Promise 失败的理由</span><br><span class="line"></span><br><span class="line"> Promise.reject(new Error(&#39;rejected&#39;))</span><br><span class="line">  .catch(function (error) &#123;</span><br><span class="line">     console.log(error)</span><br><span class="line">   &#125;)</span><br><span class="line"></span><br><span class="line">Promise.reject(&#39;anything&#39;)</span><br><span class="line">  .catch(function (error) &#123;</span><br><span class="line">    console.log(error)</span><br><span class="line">  &#125;)</span><br></pre></td></tr></table></figure>
+
+<h2 id="Promise-并行执行"><a href="#Promise-并行执行" class="headerlink" title="Promise 并行执行"></a>Promise 并行执行</h2><h3 id="all"><a href="#all" class="headerlink" title=".all()"></a>.all()</h3><p>Promise.all 方法接受一个数组作参数，数组中的对象（p1、p2、p3）均为promise实例（如果不是一个promise，该项会被用Promise.resolve转换为一个promise)。返回一个全新的Promise实例，它的状态由这三个promise实例决定 只有都fulfilled 新的Promise才会进入 fulfilled</p>
+<h3 id="race"><a href="#race" class="headerlink" title=".race()"></a>.race()</h3><p>Promise.race方法同样接受一个数组作参数。当p1, p2, p3中有一个实例的状态发生改变（变为fulfilled或rejected），p的状态就跟着改变。并把第一个改变状态的promise的返回值，传给p的回调函数</p>
+<h2 id="Promise的执行时序"><a href="#Promise的执行时序" class="headerlink" title="Promise的执行时序"></a>Promise的执行时序</h2><blockquote>
+<p>如何简单理解宏任务和微任务<br>比如：你在银行排队办理业务<br>那么队列中的每一个人都可以看做是一个宏任务<br>当排到你的时候 你告诉柜员你需要 办卡，存钱，转账，这些就是微任务。柜员不会让你办完一个业务就重新排一次队 而是一次性把你的微任务全处理完。然后才会轮到下一个人，也就是下一个宏任务。</p>
+</blockquote>
+<h3 id="宏任务-macro-task"><a href="#宏任务-macro-task" class="headerlink" title="宏任务 (macro) task"></a>宏任务 (macro) task</h3><p><strong>(macro) task</strong>，可以理解是每次执行栈执行的代码就是一个宏任务（包括每次从事件队列中获取一个事件回调并放到执行栈中执行）<br>宏任务包括</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">script(整体代码，同步代码)</span><br><span class="line">setTimeout</span><br><span class="line">setInterval</span><br><span class="line">I&#x2F;O</span><br><span class="line">UI交互事件</span><br><span class="line">postMessage</span><br><span class="line">MessageChannel</span><br><span class="line">setImmediate(Node.js 环境)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="微任务-micro-task"><a href="#微任务-micro-task" class="headerlink" title="微任务 (micro) task"></a>微任务 (micro) task</h3><p><strong>(micro)task</strong>,可以理解是在当前 task 执行结束后立即执行的任务。也就是说，在当前task任务后，下一个task之前，在渲染之前。<br>微任务包括</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Promise.then</span><br><span class="line">Object.observe</span><br><span class="line">MutaionObserver</span><br><span class="line">process.nextTick(Node.js 环境)</span><br></pre></td></tr></table></figure>
+
+<p>判断代码执行结果</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 微任务</span><br><span class="line"></span><br><span class="line">console.log(&#39;global start&#39;)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; setTimeout 的回调是 宏任务，进入回调队列排队</span><br><span class="line">setTimeout(() &#x3D;&gt; &#123;</span><br><span class="line">  console.log(&#39;setTimeout&#39;)</span><br><span class="line">&#125;, 0)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; Promise 的回调是 微任务，本轮调用末尾直接执行</span><br><span class="line">Promise.resolve()</span><br><span class="line">  .then(() &#x3D;&gt; &#123;</span><br><span class="line">    console.log(&#39;promise&#39;)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(() &#x3D;&gt; &#123;</span><br><span class="line">    console.log(&#39;promise 2&#39;)</span><br><span class="line">  &#125;)</span><br><span class="line">  .then(() &#x3D;&gt; &#123;</span><br><span class="line">    console.log(&#39;promise 3&#39;)</span><br><span class="line">  &#125;)</span><br><span class="line"></span><br><span class="line">console.log(&#39;global end&#39;)</span><br></pre></td></tr></table></figure>
+
+<p>结果是:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 同步代码看做是一次宏任务，执行结束后 执行该宏任务阶段产生的所有微任务 也就是promise中的then, 然后再执行下一个宏任务</span><br><span class="line">global start</span><br><span class="line">global end</span><br><span class="line">promise</span><br><span class="line">promise 2</span><br><span class="line">promise 3</span><br><span class="line">setTimeout</span><br></pre></td></tr></table></figure>
+
+<h1 id="Generator-异步方案、Async-Await-语法糖"><a href="#Generator-异步方案、Async-Await-语法糖" class="headerlink" title="Generator 异步方案、Async/Await 语法糖"></a>Generator 异步方案、Async/Await 语法糖</h1><h2 id="Generator-生成器函数"><a href="#Generator-生成器函数" class="headerlink" title="Generator 生成器函数"></a>Generator 生成器函数</h2><p>Generator 函数可以暂停执行和恢复执行。除此之外，它还有两个特性：函数体内外的数据交换和错误处理机制。<br>next方法不传递参数返回一个对象，next方法传入参数把参数传给函数内部<br>next 方法返回值的 value 属性，是 Generator 函数向外输出数据；next 方法还可以接受参数，这是向 Generator 函数体内输入数据。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">function* gen(x)&#123;</span><br><span class="line">  var y &#x3D; yield x + 2;</span><br><span class="line">  return y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var g &#x3D; gen(1);</span><br><span class="line">g.next() &#x2F;&#x2F; &#123; value: 3, done: false &#125;</span><br><span class="line">g.next(2) &#x2F;&#x2F; &#123; value: 2, done: true &#125;</span><br></pre></td></tr></table></figure>
+
+<p>上面代码中，第一个 next 方法的 value 属性，返回表达式 x + 2 的值（3）。第二个 next 方法带有参数2，这个参数可以传入 Generator 函数，作为上个阶段异步任务的返回结果，被函数体内的变量 y 接收。因此，这一步的 value 属性，返回的就是2（变量 y 的值）。</p>
+<p>Generator 函数内部还可以部署错误处理代码，捕获函数体外抛出的错误。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">function* gen(x)&#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    var y &#x3D; yield x + 2;</span><br><span class="line">  &#125; catch (e)&#123; </span><br><span class="line">    console.log(e);</span><br><span class="line">  &#125;</span><br><span class="line">  return y;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var g &#x3D; gen(1);</span><br><span class="line">g.next();</span><br><span class="line">g.throw（&#39;出错了&#39;）;</span><br><span class="line">&#x2F;&#x2F; 出错了</span><br></pre></td></tr></table></figure>
+
+<p>上面代码的最后一行，Generator 函数体外，使用指针对象的 throw 方法抛出的错误，可以被函数体内的 try … catch 代码块捕获。</p>
+<p>Generator 配合 Promise 的异步方案在开发中 可以使用<strong>co</strong>这个库<br>当然， <strong>“大人，时代变了”</strong>我们现在用 <strong>async / await</strong></p>
+<h2 id="Async-Await-语法糖"><a href="#Async-Await-语法糖" class="headerlink" title="Async/Await 语法糖"></a>Async/Await 语法糖</h2><p>这个大家已经用的比较多了 就不再赘述了</p>
+<p>基本用法</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">async function main () &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    const users &#x3D; await ajax(&#39;&#x2F;api&#x2F;users.json&#39;)</span><br><span class="line">    console.log(users)</span><br><span class="line">    const posts &#x3D; await ajax(&#39;&#x2F;api&#x2F;posts.json&#39;)</span><br><span class="line">    console.log(posts)</span><br><span class="line">    const urls &#x3D; await ajax(&#39;&#x2F;api&#x2F;urls.json&#39;)</span><br><span class="line">    console.log(urls)</span><br><span class="line">  &#125; catch (e) &#123;</span><br><span class="line">    console.log(e)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>异常处理</p>
+<ul>
+<li>让await后面的Promise对象自己catch</li>
+<li>也可以让外面的async函数返回的Promise对象统一catch</li>
+<li>像同步代码一样，放在一个try…catch结构中；</li>
+</ul>
+<p>————————————————<br>版权声明：本文为CSDN博主「Holyforsaken_FHC」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/fanfanyuyu/article/details/114802192">https://blog.csdn.net/fanfanyuyu/article/details/114802192</a></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2021/03/16/JavaScript%20%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2021/03/16/JavaScript%20%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>

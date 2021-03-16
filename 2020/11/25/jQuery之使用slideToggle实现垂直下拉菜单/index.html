@@ -1,0 +1,276 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link rel="bookmark"  type="image/x-icon"  href="/img/logo_miccall.png"/>
+	<link rel="shortcut icon" href="/img/logo_miccall.png">
+	
+			    <title>
+    Hexo
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="/css/mic_main.css" />
+    <link rel="stylesheet" href="/css/dropdownMenu.css" />
+    <meta name="keywords" content="Mr.Hao" />
+    
+    	<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+	 
+    <noscript>
+        <link rel="stylesheet" href="/css/noscript.css" />
+    </noscript>
+    <style type="text/css">
+        body:before {
+          content: ' ';
+          position: fixed;
+          top: 0;
+          background: url('/img/sky.jpg') center 0 no-repeat;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-size: cover; 
+        }
+    </style>
+
+			    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script async type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.scrollex.min.js"></script>
+    <script src="/js/jquery.scrolly.min.js"></script>
+    <script src="/js/skel.min.js"></script>
+    <script src="/js/util.js"></script>
+    <script src="/js/main.js"></script>
+	
+<meta name="generator" content="Hexo 5.2.0"></head>
+    
+		
+<!-- Layouts -->
+
+
+
+<!--  代码渲染  -->
+<link rel="stylesheet" href="/css/prism_coy.css" />
+<link rel="stylesheet" href="/css/typo.css" />
+<!-- 文章页 -->
+<body class="is-loading">
+    <!-- Wrapper 外包 s-->
+    <div id="wrapper" class="fade-in">
+        <!-- Intro 头部显示 s -->
+        <!-- Intro 头部显示 e -->
+        <!-- Header 头部logo start -->
+        <header id="header">
+    <a href="/" class="logo">Mr.Hao</a>
+</header>
+        <!-- Nav 导航条 start -->
+        <nav id="nav" class="special" >
+            <ul class="menu links" >
+			<!-- Homepage  主页  --> 
+			<li >
+	            <a href="/" rel="nofollow">主页</a>
+	        </li>
+			<!-- categories_name  分类   --> 
+	        
+	        <li class="active">
+	            <a href="#s1">分类</a>
+	                    <ul class="submenu">
+	                        <li>
+	                        
+	                    </ul>
+	        </li>
+	        
+	        <!-- archives  归档   --> 
+	        
+	        
+		        <!-- Pages 自定义   -->
+		        
+		        <li>
+		            <a href="/about/" title="关于">
+		                关于
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/group/" title="搜索">
+		                搜索
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/gallery/" title="友情链接">
+		                友情链接
+		            </a>
+		        </li>
+		        
+		        <li>
+		            <a href="/tag/" title="标签">
+		                标签
+		            </a>
+		        </li>
+		        
+
+
+            </ul>
+            <!-- icons 图标   -->
+			<ul class="icons">
+                    
+                    <li>
+                        <a title="github" href="https://github.com/zhenghao-up" target="_blank" rel="noopener">
+                            <i class="icon fa fa-github"></i>
+                        </a>
+                    </li>
+                    
+			</ul>
+</nav>
+
+        <div id="main" >
+            <div class ="post_page_title_img" style="height: 25rem;background-image: url(https://img0.baidu.com/it/u=3425959099,3353638953&amp;fm=26&amp;fmt=auto&amp;gp=0.jpg);background-position: center; background-repeat:no-repeat; background-size:cover;-moz-background-size:cover;overflow:hidden;" >
+                <a href="#" style="padding: 4rem 4rem 2rem 4rem ;"><h2 >jQuery之使用slideToggle实现垂直下拉菜单</h2></a>
+            </div>
+            <!-- Post -->
+            <div class="typo" style="padding: 3rem;">
+                <h4 id="一、前面的唠叨"><a href="#一、前面的唠叨" class="headerlink" title="一、前面的唠叨"></a><strong>一、前面的唠叨</strong></h4><p>jQuery库确实是个很强大，可以让人偷懒的东西。过去许多只有在flash中才可以看到的效果，现在只要几行js代码+jQuery库就可以轻松实现。本实例就展示如何利用jQuery的slideToggle实现效果上佳的垂直下拉菜单效果</p>
+<h4 id="二、效果抢先"><a href="#二、效果抢先" class="headerlink" title="二、效果抢先"></a><strong>二、效果抢先</strong></h4><p>下为本实例demo截图：<br><img src="http://image.zhangxinxu.com/image/blog/200912/2009-12-22_023159.png" alt="垂直下拉菜单效果截图"></p>
+<p>您可以狠狠地点击这里：<a target="_blank" rel="noopener" href="http://www.zhangxinxu.com/study/200912/jquery-drop-down-menu.html">demo实例页面</a></p>
+<h4 id="三、关于CSS"><a href="#三、关于CSS" class="headerlink" title="三、关于CSS"></a><strong>三、关于CSS</strong></h4><p>下拉菜单分为两个部分，一个是单击区域，也就是默认可见区域，<img src="http://image.zhangxinxu.com/image/blog/200912/2009-12-22_024331.png" alt="默认可见区域">您可以使用图片或其他形式的元素。我比较懒，怕作图，所以本实例可见区域就用CSS写了一下。</p>
+<p>还有一个就是下拉列表区域了，一般而言，都是用无序列表ul li实现，当然，其实直接裸a标签（即<code>&lt;div&gt;&lt;a href=&quot;#&quot;&gt;a&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;b&lt;/a&gt;&lt;a href=&quot;#&quot;&gt;c&lt;/a&gt;&lt;/div&gt;</code>）就可以实现效果了，但是，为了更好的利用语义化，多采用li列表形式（即<code>ul &gt; li &gt; a</code>）。默认情况下，下拉菜单列表区域是隐藏的，单击可见区域后会显示，出现下拉菜单。每个菜单的样式都不一样，且CSS不是本文重点，所以这里不对样式做详解了。</p>
+<h4 id="四、关于jQuery代码"><a href="#四、关于jQuery代码" class="headerlink" title="四、关于jQuery代码"></a><strong>四、关于jQuery代码</strong></h4><p>jQuery代码分为三小段，见下面：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">$(function()&#123;</span><br><span class="line">        &#x2F;&#x2F;第一小段</span><br><span class="line">	$(&quot;.v_menu_list li:odd&quot;).addClass(&quot;alt&quot;);</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F;第二小段</span><br><span class="line">	$(&quot;#menuClick&quot;).click(function()&#123;</span><br><span class="line">		$(&quot;#vMenuList&quot;).slideToggle();</span><br><span class="line">		return false;</span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">        &#x2F;&#x2F;第三小段</span><br><span class="line">	$(&quot;.v_menu_list &gt; li &gt; a&quot;).hover(function()&#123;</span><br><span class="line">		$(this).animate(&#123;</span><br><span class="line">			paddingLeft: 20</span><br><span class="line">		&#125;,100);</span><br><span class="line">	&#125;,function()&#123;</span><br><span class="line">		$(this).animate(&#123;</span><br><span class="line">			paddingLeft: 5</span><br><span class="line">		&#125;,50);</span><br><span class="line">	&#125;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>这三小段代码只有第二段是必须的，第一小段和第三小段都是为了增强表现表现效果添加的。这三小段的作用分别如下：<br>1、<code>$(&quot;.v_menu_list li:odd&quot;).addClass(&quot;alt&quot;);</code>是作用是实现斑马条纹，就是灰色白色的间隔。如下图：<br><img src="http://image.zhangxinxu.com/image/blog/200912/2009-12-22_025640.png" alt="灰白斑马间条纹"></p>
+<p>li:odd是jQuery高级选择器，用以寻找页面范围内的奇数匹配项。</p>
+<p>2、第二段中的<code>$(&quot;#vMenuList&quot;).slideToggle();</code>其实就是本文的全部，一个slideToggle即实现的菜单的自动下拉以收起。</p>
+<p>slideToggle(speed,callback)意思是在任何隐藏的元素上执行slideDown()，同时在任何非隐藏的任何已包装的元素上执行slideUp()。也就是隐藏元素会显示同时向下滑，形成下拉效果，如果是非隐藏元素则滑上收起然后消失。</p>
+<p>其有两个参数，一个是speed，表速度，数字或字符串关键字，如是数字，表毫秒，如字符串关键字，则有slow,normal和fast，默认是normal。另一个参数是callback，指回调函数，当下拉完毕或收起完毕时执行某函数。本实例没有回调操作，故省略。</p>
+<p>所以<code>$(&quot;#vMenuList&quot;).slideToggle();</code>可以解释为id为vMenuList的元素如果是隐藏的则出现并下拉，如果当前是可见的，则收起并隐藏。</p>
+<p>3、第三段是利用了animate函数自定义动画，让每个列表项中的a标签的padding-left值改变，当鼠标经过时渐增质20像素，鼠标移开回到原来的0像素。深入讲那可要比大话西游里的唐僧还要啰嗦，所以关于animate留到日后，还有hover的使用也是，且听下回分解:)。</p>
+<h4 id="五、相关下载"><a href="#五、相关下载" class="headerlink" title="五、相关下载"></a><strong>五、相关下载</strong></h4><p>您可以狠狠地点击这里：<a target="_blank" rel="noopener" href="http://www.zhangxinxu.com/study/down/jquery-drop-down-menu.zip">精简源文件下载</a>(.zip 16.8K)</p>
+<p>本文转自：<a target="_blank" rel="noopener" href="http://www.zhangxinxu.com/wordpress/?p=458">http://www.zhangxinxu.com/wordpress/?p=458</a></p>
+<p>转载于:<a target="_blank" rel="noopener" href="https://www.cnblogs.com/pansly/archive/2011/08/16/2141533.html">https://www.cnblogs.com/pansly/archive/2011/08/16/2141533.html</a></p>
+
+            </div>
+
+            <!-- Post Comments -->
+            
+    <!-- 使用 DISQUS_CLICK -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+
+<!-- add animation -->
+<style>
+	.disqus_click_btn {
+            line-height: 30px;
+            margin: 0;
+            min-width: 50px;
+            padding: 0 14px;
+            display: inline-block;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0;
+            overflow: hidden;
+            will-change: box-shadow;
+            transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1), background-color .2s cubic-bezier(.4, 0, .2, 1), color .2s cubic-bezier(.4, 0, .2, 1);
+            outline: 0;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            vertical-align: middle;
+            border: 0;
+            background: rgba(158, 158, 158, .2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+            color: #fff;
+            background-color: #7EC0EE;
+            text-shadow: 0
+        }
+</style>
+	
+<div class="btn_click_load" id="disqus_bt"> 
+    <button class="disqus_click_btn">点击查看评论</button>
+</div>
+
+<!--
+<script type="text/javascript">
+$('.btn_click_load').click(function() {
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'http-miccall-tech'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    document.getElementById('disqus_bt').style.display = "none";
+});
+</script>
+-->
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'http://example.com/2020/11/25/jQuery%E4%B9%8B%E4%BD%BF%E7%94%A8slideToggle%E5%AE%9E%E7%8E%B0%E5%9E%82%E7%9B%B4%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'http://example.com/2020/11/25/jQuery%E4%B9%8B%E4%BD%BF%E7%94%A8slideToggle%E5%AE%9E%E7%8E%B0%E5%9E%82%E7%9B%B4%E4%B8%8B%E6%8B%89%E8%8F%9C%E5%8D%95/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+
+<script type="text/javascript">
+    $('.btn_click_load').click(function() {  //click to load comments
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document;
+            var s = d.createElement('script');
+            s.src = '//http-miccall-tech.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', + new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+        $('.btn_click_load').css('display','none');
+    });
+</script>
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+
+        </div>
+        <!-- Copyright 版权 start -->
+                <div id="copyright">
+            <ul>
+                <li>&copy;Powered By <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/" style="border-bottom: none;">hexo</a></li>
+                <li>Design: <a target="_blank" rel="noopener" href="http://miccall.tech " style="border-bottom: none;">miccall</a></li>
+            </ul>
+            
+                <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+			
+        </div>
+    </div>
+</body>
+
+
+
+ 	
+</html>
